@@ -1,0 +1,140 @@
+/* from-scratch.css */
+
+/* Basic page styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    font-family: "Helvetica", sans-serif; /* Font family */
+    color: #333;                         /* Font color */
+  }
+  
+  /* Navigation bar styling */
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #e2e2e2;
+  }
+  
+  nav .brand {
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+  nav .brand a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  /* Nav links */
+  nav ul {
+    list-style: none;
+    display: flex; 
+    gap: 1rem;
+    margin: 0; 
+    padding: 0;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  /* Hero section */
+  header.hero {
+    text-align: center;
+    background-color: #ddd;
+    padding: 2rem;
+  }
+  header.hero h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+  header.hero p {
+    margin: 0.5em 0;
+  }
+  
+  /* Main container */
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  /* Div #1: YouTube video section */
+  .video-section {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  .video-section h2 {
+    margin-bottom: 1em;
+  }
+  
+  /* Div #2: Interests list */
+  .interests-list {
+    background-color: #fff;
+    padding: 1rem;
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+  }
+  .interests-list h2 {
+    margin-top: 0;
+  }
+  .interests-list ol li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Div #3: Image row (3 side-by-side images) */
+  .image-row {
+    display: flex;            
+    justify-content: space-around; 
+    align-items: flex-start; 
+    margin: 2rem 0;
+  }
+  .my-image {
+    width: 30%;                
+    box-sizing: border-box;
+    margin: 0 1rem;
+    text-align: center;
+  }
+  .my-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+    border: 2px solid #ccc;
+  }
+  
+  /* Tableau embed container */
+  .tableau-embed {
+    margin: 2rem 0;
+  }
+  .tableau-embed h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .tableauPlaceholder {
+    width: 100%;
+    height: 700px;
+    position: relative;
+  }
+  .tableauPlaceholder object {
+    display: block;
+    width: 100%;
+    height: 700px;
+  }
+  
+  /* Back to Top link */
+  .back-to-top {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  .back-to-top a {
+    text-decoration: none;
+    color: #0066cc;
+  }
+  .back-to-top a:hover {
+    text-decoration: underline;
+  }
+  

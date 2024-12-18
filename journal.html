@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journal Prompt Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    h1 {
+      margin-top: 2rem;
+      font-size: 2.5rem;
+      color: #4A4E69;
+    }
+    #prompt-box {
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background-color: #E9ECEF;
+      border: 2px solid #4A4E69;
+      border-radius: 10px;
+      width: 60%;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+      font-size: 1.25rem;
+      color: #4A4E69;
+      min-height: 50px;
+    }
+    button {
+      padding: 0.8rem 1.5rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+      background-color: #4A4E69;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #22223B;
+    }
+    footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>Journal Prompt Generator</h1>
+  <div id="prompt-box">
+    Click the button to get your first prompt!
+  </div>
+  <button onclick="generatePrompt()">Get a Prompt</button>
+
+  <footer>
+    <p>Created with 💡 and a bit of AI collaboration!</p>
+  </footer>
+
+  <script>
+    // Array of journal prompts
+    const prompts = [
+      "What are three things you’re grateful for today, and why?",
+      "Describe a time when you overcame a significant challenge. What did you learn?",
+      "Write a letter to your future self.",
+      "What is your dream job, and what steps can you take to achieve it?",
+      "If you had an extra hour every day, how would you spend it?",
+      "What does success mean to you?",
+      "Describe a place that makes you feel calm and happy.",
+      "What is a skill you’d like to learn and why?",
+      "Reflect on a book, movie, or song that inspired you.",
+      "Write about a time you felt truly proud of yourself.",
+      "What does self-care mean to you? How do you practice it?",
+      "What are your goals for the next 5 years?",
+      "Describe your perfect day from start to finish.",
+      "Write about someone who has made a big impact on your life.",
+      "What habits do you want to build, and why?",
+      "If you could travel anywhere, where would you go and what would you do?",
+      "What is your favorite childhood memory?",
+      "How do you handle stress, and what strategies work best for you?",
+      "What’s something new you’ve tried recently, and how did it go?",
+      "What values are most important to you, and why?"
+    ];
+
+    // Function to generate a random prompt
+    function generatePrompt() {
+      const randomIndex = Math.floor(Math.random() * prompts.length);
+      const promptBox = document.getElementById("prompt-box");
+      promptBox.textContent = prompts[randomIndex];
+    }
+  </script>
+
+<div class="text-center">
+    <a href="index.html" class="btn btn-primary">Go back Home</a>
+  </div>
+
+</body>
+</html>

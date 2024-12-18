@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My From-Scratch Page</title>
+  <!-- Link to your custom CSS file (NOT Bootstrap). -->
+  <link rel="stylesheet" href="css/from-scratch.css" />
+</head>
+<body>
+
+  <!-- Anchor for "Back to Top" -->
+  <div id="top"></div>
+
+  <!-- Simple Nav Bar (not Bootstrap-based) -->
+  <nav>
+    <div class="brand">Madi Myriel</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about-me.html">About Me</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="resume.html">Resume</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero section -->
+  <header class="hero">
+    <h1>Welcome to My From-Scratch Page</h1>
+    <p>This page is fully coded in a single HTML file linking to a custom CSS file.</p>
+  </header>
+
+  <!-- Main container -->
+  <div class="container">
+    
+    <p>
+      Jump to my <a href="#my-interests">Interests</a> section.
+    </p>
+
+    <!-- YouTube video section (Div #1) -->
+    <div class="video-section">
+      <h2>My Favorite Hobby</h2>
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/nvkKTX_YVXk?si=MtxZ_VzZuKF9t-V5"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- Interests list (Ordered list with a nested UL) (Div #2) -->
+    <div id="my-interests" class="interests-list">
+      <h2>My Interests</h2>
+      <ol>
+        <li>Art & Design
+          <ul>
+            <li>Oil Painting</li>
+            <li>Sketching</li>
+            <li>Digital Art</li>
+          </ul>
+        </li>
+        <li>Film Photography</li>
+        <li>Music Composition</li>
+        <li>International Travel and Humanitarian Work</li>
+        <li>The Gathering of Israel</li>
+      </ol>
+    </div>
+
+    <!-- Image row: Three images side by side (Div #3) -->
+    <div class="image-row">
+      <div class="my-image">
+        <h2>Vanuatu</h2>
+        <img src="assets/Worksite.jpg" alt="A construction site in Vanuatu">
+        <p>
+          This last summer I spent several weeks overseeing construction sites in the Pacific Islands.
+          This is one worksite in Vanuatu, where members of the Church of Jesus Christ of Latter-day Saints
+          are constructing three new classrooms for students currently attending class in tents.
+        </p>
+      </div>
+    
+      <div class="my-image">
+        <h2>Kenya</h2>
+        <img src="assets/Africa.jpg" alt="A group of girls in Kenya, Africa">
+        <p>
+          I have spent 6 weeks in Kenya over the last year overseeing a similar project.
+          This picture shows myself (in the front) and a group of girls I managed.
+          I have a lot of love for all of them!
+        </p>
+      </div>
+    
+      <div class="my-image">
+        <h2>Fiji</h2>
+        <img src="assets/Wayalailai.jpg" alt="A small house on an island, overshadowed by a large mountain">
+        <p>
+          During my time in the Pacific Islands I had the blessing of visiting a tiny inhabited island called Wayalailai.
+          The people there are kind, accepting and generous. Would you believe me if I told you I hiked to the top of that mountain?
+          I promise I did! Use the <a href="contact.html">contact page</a> to reach out to me and I'll send you a photo of me at the top!
+        </p>
+      </div>
+    </div>
+
+    <!-- Tableau embed -->
+    <div class="tableau-embed">
+      <h2>Interactive Tableau Graph</h2>
+      <!-- Sample embed from Tableau Public. Replace with your actual embed code. -->
+      <div class='tableauPlaceholder' id='viz1673123456789'>
+        <noscript>
+          <a href='#'>
+            <img alt='Sample Viz'
+                 src='https://public.tableau.com/static/images/sa/sample.png'
+                 style='border:none;' />
+          </a>
+        </noscript>
+        <object class='tableauViz'
+                data='https://public.tableau.com/views/YourViz/Sheet1?:language=en-US&:display_count=n&:origin=viz_share_link'
+                width='100%' height='700'>
+        </object>
+      </div>
+      <script type='text/javascript' src='https://public.tableau.com/javascripts/api/tableau-2.9.1.min.js'></script>
+    </div>
+
+    <!-- Back to Top -->
+    <p class="back-to-top">
+      <a href="#top">Back to Top</a>
+    </p>
+
+  </div> <!-- end .container -->
+
+</body>
+</html>
